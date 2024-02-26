@@ -3,6 +3,7 @@ import Image2 from "../../assets/images/national_park.png"
 import Image3 from "../../assets/images/food_allergen.png"
 import Image4 from "../../assets/images/home_credit.jpeg"
 import Image5 from "../../assets/images/machi.png"
+import Image6 from "../../assets/images/Platemate.png"
 
 const data = [
   {
