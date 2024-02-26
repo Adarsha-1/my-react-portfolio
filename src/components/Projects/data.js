@@ -39,6 +39,16 @@ const data = [
   {
     id: 4,
     category: "backend",
+    image: Image3,
+    title: "PlateMate",
+    desc: "Developed a comprehensive Web Based application where users can discover, publish, and share cooking recipes, specifically designed to assist students abroad in learning to cook delicious meals.",
+    demo: "http://egatortutorials.com",
+    technologies_used: "JavaScript, React, Java, SpringBoot, PostgreSQL",
+    github: "https://github.com/Adarsha-1/PlateMate-Cooking-Recipe",
+  },
+  {
+    id: 5,
+    category: "backend",
     image: Image4,
     title: "Home Credit Default Risk",
     desc: "The project is based on the Home Credit Default Risk (HCDR) Kaggle Competition. The goal of this project is to predict whether or not a client will repay a loan. In order to make sure that people who struggle to get loans due to insufficient or non-existent credit histories have a positive loan experience, Home Credit makes use of a variety of alternative data--including telco and transactional information--to predict their clients' repayment abilities.",
@@ -47,7 +57,7 @@ const data = [
     github: "https://github.com/Adarsha-1/Home-Credit-Default-Risk",
   },
   {
-    id: 5,
+    id: 6,
     category: "backend",
     image: Image5,
     title: "Lung cancer detection using boosted neural network",
