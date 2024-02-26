@@ -1,10 +1,10 @@
 import './portfolio.css'
 import Projects from './Projects'
 import data from './data'
-import { useState } from 'react'
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState(data);
+
+  const projects = data;
 
   return (
     <section className="portfolio" id='projects'>
