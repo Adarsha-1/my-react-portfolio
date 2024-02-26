@@ -1,0 +1,124 @@
+
+.portfolio {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Match your desired background */
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.btn.cat__btn {
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+.btn.cat__btn:hover {
+    transform: translateY(0);
+}
+
+.portfolio__projects {
+    /* margin-top: 3rem;
+    display: grid; */
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Creates a responsive grid with a min-width for each card */
+    /* gap: 2rem; This sets the gap between the cards */
+    /* justify-content: center; Center the cards in the grid */
+    /* align-items: start; */
+
+
+    margin: 3rem auto; /* Top and bottom margin with auto to center horizontally */
+    display: grid;
+    gap: 1.5rem;
+    justify-content: space-around; /* Evenly distributes space around items */
+    max-width: 1000px; 
+}
+
+
+.card {
+    padding: 1rem;
+    background-color: white; /* Initial background color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Box shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    overflow: hidden; /* Ensures nothing spills out of the card */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Increased shadow for lifted effect */
+}
+
+.portfolio__project-image img {
+    width: 100%; /* Image takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: var(--border-radius-2); /* Adjusted from global styles for border-radius */
+}
+.card.portfolio__project {
+    animation: animateProject 800ms ease-in forwards;
+}
+
+@keyframes animateProject {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.portfolio__project-image {
+    width: 100%;
+    height: fit-content;
+    /* min-height: 7rem;
+    max-height: 15rem; */
+    height: 4rem,;
+    background: var(--color-light);
+    border-radius: var(--border-radius-2);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__project p {
+    margin: 0.5rem 0 2rem;
+}
+
+.portfolio__project-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.portfolio__project:hover .btn.sm {
+    border-color: var(--color-white);
+}
+
+.portfolio__project:hover .btn.sm.primary {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    .portfolio__projects {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    .portfolio__categories {
+        gap: 0.6rem;
+    }
+
+    .btn.cat__btn {
+        padding: 0.7rem 0.8rem;
+    }
+
+    .portfolio__projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

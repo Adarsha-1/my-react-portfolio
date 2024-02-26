@@ -1,0 +1,42 @@
+.contact {
+    text-align: center;
+    padding: 50px 20px; /* Adjusted padding */
+    background-color: #f0f0f0; /* Match your desired background */
+}
+
+.contact__container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    margin: 0 auto; /* Center the container */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.contact__container a {
+    width: 3rem;
+    height: 3rem; /* Define a height to make it a square */
+    background: darkgrey; /* The pink background color from your screenshot */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Assuming icons are white based on your screenshot */
+    font-size: 2rem;
+    border: 2px solid transparent;
+    border-radius: 50%; /* Makes it circular */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.contact__container a:hover {
+    background: white; /* Background to white on hover */
+    color: darkgrey; /* Icon color to pink on hover */
+    border-color: darkgrey; /* Border color to pink on hover */
+    transform: translateY(-0.5rem); /* Move up on hover */
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media screen and (max-width: 600px) {
+    .contact__container {
+        gap: 1.5rem;
+    }
+}

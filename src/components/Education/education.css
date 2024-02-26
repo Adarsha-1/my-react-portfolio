@@ -1,0 +1,56 @@
+.education {
+    text-align: center;
+    padding: 20px;
+    background-color: white; /* Match your desired background */
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+  
+  .education-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .education h2 {
+    margin-bottom: 60px;
+  }
+
+  .service__icon {
+    /* background: var(--color-primary); */
+    padding: 0.6rem;
+    border-radius: var(--border-radius-3);
+    font-size: 1.5rem;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+  
+  .card.education-card {
+    width: 500px; /* Adjust size as needed */
+    padding: 20px;
+    background-color: #f0f0f0; /* Initial background color */
+    border-radius: 20px; /* Rounded corners */
+    /* box-shadow: 0 4px 8px #f0f0f0; Box shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  }
+  
+  .education-card:hover {
+    background-color: white; /* Color changes on hover */
+    border-color: #f0f0f0;
+  }
+  
+  .education-card span {
+    max-width: 100px; /* Adjust the logo size */
+    margin-bottom: 10px;
+  }
+  
+  .education-card h3 {
+    margin: 10px 0;
+  }
+
+  .card.about__card h5 {
+    margin: 0.5rem 0;
+}
+  

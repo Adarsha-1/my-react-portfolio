@@ -1,0 +1,45 @@
+.skills__container {
+    margin: 3rem auto; /* Top and bottom margin with auto to center horizontally */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five items per row */
+    gap: 1.5rem;
+    justify-content: space-around; /* Evenly distributes space around items */
+    max-width: 1000px; /* Maximum width of the container */
+}
+
+.card.skills {
+    background: #f0f0f0; /* Replace with your actual background color variable */
+    color: black; /* Replace with your actual text color variable */
+    padding: 1rem;
+    border-radius: 50px; /* Gives a pill-like shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    height: 10px;
+}
+
+.card.skills:hover {
+    background: white; /* Replace with your actual hover color variable */
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+
+.card.skills h6 {
+    text-align: center;
+    margin: 0;
+    font-size: 0.8rem; /* Adjust font size as necessary */
+}
+
+/* Media query for screens smaller than 1200px but larger than 600px */
+@media screen and (min-width: 601px) and (max-width: 1199px) {
+    .skills__container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Fit as many as possible without squeezing */
+    }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr); /* Have two skills per row on small screens */
+    }
+}

@@ -1,0 +1,78 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px; /* Adjust padding to match your design */
+    /* background-color: #f8f9fa; Light grey background or any color of your choice */
+    background-color: white;
+    padding-bottom: 80px;
+    padding-top: 100px;
+  }
+  
+  .intro-text {
+    max-width: 600px; /* Adjust the max-width as needed */
+    align-items: start;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem; /* Large font size for the heading */
+    margin-bottom: 0.5em; /* Spacing below the heading */
+  }
+  
+  .intro p {
+    font-size: 1rem;
+    margin-bottom: 1em; /* Spacing below the paragraph */
+  }
+  
+  .intro-details {
+    font-size: 0.9rem;
+    color: #6c757d; /* Subdued text color for details */
+  }
+  
+  .intro-image {
+    padding-left: 40px; /* Space between text and image */
+  }
+  
+  .intro-image img {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow around the image */
+  }
+
+  .btn.primary {
+    display: inline-flex; /* Flex to align the text and icon */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 0.5rem 1rem; /* Add some padding */
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Bold font */
+    cursor: pointer; /* Cursor to indicate it's clickable */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+  }
+  
+  .btn.primary:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .btn.primary svg {
+    margin-left: 0.5rem; /* Space between text and icon */
+  }
+  
+  
+  /* Responsive design adjustments if needed */
+  @media (max-width: 768px) {
+    .intro {
+      flex-direction: column;
+    }
+    
+    .intro-image {
+      margin-top: 20px;
+    }
+  }
+  
