@@ -40,7 +40,7 @@ const data = [
   {
     id: 4,
     category: "backend",
-    image: Image3,
+    image: Image6,
     title: "PlateMate",
     desc: "Developed a comprehensive Web Based application where users can discover, publish, and share cooking recipes, specifically designed to assist students abroad in learning to cook delicious meals.",
     demo: "http://egatortutorials.com",
