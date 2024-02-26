@@ -13,7 +13,7 @@ const data = [
     desc: "A responsive personal portfolio project, developed with React. It provides an optimal user experience while highlighting my work, projects, and expertise in a visually appealing manner.",
     demo: "http://egatortutorials.com",
     technologies_used: "React.js, HTML, CSS, JavaScript",
-    github: "https://github.com/Adarsha-1/my-portfolio",
+    github: "https://github.com/Adarsha-1/my-react-portfolio",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const data = [
     desc: "Developed a machine learning model to classify patients for lung cancer detection, achieving 90% accuracy and reduced false positives. Trained on Thoracic surgery data",
     demo: "http://egatortutorials.com",
     technologies_used: "Python, TensorFlow, scikit-learn",
-    github: "https://github.com/santoshi-1/expensetrackerapi",
+    github: "https://github.com/Adarsha-1/my-react-portfolio",
   },
 ];
 
